@@ -8,6 +8,7 @@ import getpass
 import time
 
 from mars_utils import *
+import datetime
 
 LIBRARIES_PATH = os.path.split(os.path.realpath(__file__))[0]
 
@@ -108,7 +109,8 @@ def build_apple(project, save_path):
         xcode_sdks = xcode_sdks[xcode_sdks.find("\n"):]
         targets.append(target)
 
-        ret = os.system("xcodebuild clean -sdk %s -configuration Release -project %s" %(target, project.path))
+        # ret = os.system("xcodebuild clean -sdk %s -configuration Release -project %s" %(target, project.path))
+        ret = 0
         if ret:
             print("\033[0;31;40m!!!!clean %s failed!!!\033[0m" %(target))
             return False
