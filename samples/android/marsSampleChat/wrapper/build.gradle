@@ -29,5 +29,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-4'
     compile 'com.google.code.gson:gson:2.2.4'
-    compile "com.tencent.mars:mars-core:${VERSION_NAME}"
+//    compile "com.tencent.mars:mars-core:${VERSION_NAME}"
 }
